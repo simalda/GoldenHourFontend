@@ -1,0 +1,114 @@
+/*calendar*/
+@mixin mini-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.calendar {
+  text-align: center;
+}
+.cellStyle {
+  width: 40px;
+  height: 40px;
+  flex-basis: unset;
+  max-width: unset;
+}
+.calendarInner {
+  display: inline-block;
+}
+.timeslot {
+  border-radius: 10px;
+  height: 6vh;
+  width: 330px;
+  background-color: white;
+  font-size: 18px;
+  font-family: "Heebo-Medium";
+  border: aliceblue;
+  border: none;
+  cursor: pointer;
+  margin: 6px;
+}
+.timeItems {
+  display: inline-grid;
+  justify-content: center;
+  width: 350px;
+  background: #f1dddc;
+  padding-top: 2vh;
+  border-radius: 5%;
+}
+.calendarHeader {
+  height: 9vh;
+  background-color: #f1dddc;
+  width: 350px;
+  border-radius: 10px;
+}
+.calendarHeaderYear {
+  padding-top: 1vh;
+  font-size: 1.5vh;
+  font-family: "Heebo-Medium";
+  color: #515151;
+}
+
+.calendarHeaderDate {
+  font-size: 2vh;
+  font-family: "Heebo-Bold";
+  padding-bottom: 1vh;
+  color: #515151;
+}
+.calendarWrap {
+  width: 350px;
+  border-radius: 10px;
+  background-color: rgb(248, 239, 239);
+  display: inline-block;
+}
+.miniButton1 {
+  @include mini-button;
+  background-color: rgb(170, 165, 165);
+  font-family: "Heebo-Medium", sans-serif;
+}
+.miniButton1:hover,
+.miniButton2:hover {
+  background-color: #f1dddc;
+  color: #515151;
+  outline: none;
+  cursor: pointer;
+}
+.miniButton2 {
+  @include mini-button;
+  background-color: #62909a;
+  font-family: "blackjack";
+}
+
+.calendarFooter {
+  padding: 1vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.react-calendar__tile--active {
+  background: #62909a;
+  color: white;
+  border-radius: 5vh;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #515151;
+}
+
+.dayNotAvailable {
+  color: red;
+}
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  /* border: 1px solid #a0a096; */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
